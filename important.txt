@@ -1,0 +1,7 @@
+don't use numpy version 2 if numpy already installed then try pip install --force-reinstall numpy==1.24.4
+or else pip install numpy==1.24.4
+
+2 Improvements
+
+1) Time Stamps addition 
+2) Use a Text 2 Speech small engine so that whenever the wake word is being called the user should get a "How may i help you?" response in speech while running the project or some kind of voice output whenever the wake word is being said.
