@@ -3,14 +3,14 @@ import sounddevice as sd
 from scipy.io.wavfile import write
 
 
-def record_audio_and_save(save_path, n_times=50):
+def record_audio_and_save(save_path, n_times=100):
     """
     This function will run `n_times` and everytime you press Enter you have to speak the wake word
 
     Parameters
     ----------
     n_times: int, default=50
-        The function will run n_times default is set to 50.
+        The function will run n_times default is set to 100.
 
     save_path: str
         Where to save the wav file which is generated in every iteration.
@@ -24,7 +24,7 @@ def record_audio_and_save(save_path, n_times=50):
         myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
         sd.wait()
         write(save_path + str(i) + ".wav", fs, myrecording)
-        input(f"Press to record next or two stop press ctrl + C ({i + 1}/{n_times}): ")
+        input(f"Press to record next or to stop press ctrl + C ({i + 1}/{n_times}): ")
 
 def record_background_sound(save_path, n_times=100):
     """
@@ -35,7 +35,7 @@ def record_background_sound(save_path, n_times=100):
     Parameters
     ----------
     n_times: int, default=50
-        The function will run n_times default is set to 50.
+        The function will run n_times default is set to 100.
 
     save_path: str
         Where to save the wav file which is generated in every iteration.
