@@ -5,8 +5,8 @@
 3) Training Data
 4) Prediction and Evaluation
 
-## Ideas to be executed from the studets.
- 1) Watching the demo of Wake Word Detection, build a speaker id detection model.
+## Future Ideas.
+ 1) Build a speaker id detection model.
  2) Use the built speaker id detection model paralley with the Wake Word Detection Model to get an output
     such as "Hi {Name of the Detected Speaker} How can I help you." in a robotic voice using some small voice engine.
 
